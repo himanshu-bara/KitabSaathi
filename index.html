@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KitaSathi | BookBank</title>
+ <!--fontawesome-->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+ integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <link rel="stylesheet"  
+    href="https://cdnjs.cloudflare.com/ajax/lib 
+    s/font-awesome/6.4.0/css/all.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <!-- Unicons -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- caart icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- login -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+    <div class="form login_form">
+      <form action="#">
+        <h2>Login</h2>
+        <div class="input_box">
+          <input type="email" placeholder="Enter your email" required />
+          <i class="uil uil-envelope-alt email"></i>
+        </div>
+        <div class="input_box">
+          <input type="password" placeholder="Enter your password" required />
+          <i class="uil uil-lock password"></i>
+          <i class="uil uil-eye-slash pw_hide"></i>
+        </div>
+        <div class="option_field">
+          <span class="checkbox">
+            <input type="checkbox" id="check" />
+            <label for="check">Remember me</label>
+          </span>
+          <a href="#" class="forgot_pw">Forgot password?</a>
+        </div>
+        <button class="button">Login Now</button>
+        <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+      </form>
+    </div>
+    <!-- Signup From -->
+    <div class="form signup_form">
+      <form action="#">
+        <h2>Signup</h2>
+        <div class="input_box">
+          <input type="email" placeholder="Enter your email" required />
+          <i class="uil uil-envelope-alt email"></i>
+        </div>
+        <div class="input_box">
+          <input type="password" placeholder="Create password" required />
+          <i class="uil uil-lock password"></i>
+          <i class="uil uil-eye-slash pw_hide"></i>
+        </div>
+        <div class="input_box">
+          <input type="password" placeholder="Confirm password" required />
+          <i class="uil uil-lock password"></i>
+          <i class="uil uil-eye-slash pw_hide"></i>
+        </div>
+        <button class="button">Signup Now</button>
+        <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+    <!--Scroll-Up-->
+    <a id="button">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!--Header-->
+    <section id="header">
+      <a href="index.html"><img class="logo" src="img/logo.png" height="30vh" alt="KitabSathi"/></a>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="search.html"><span class="fas fa-search"></span> Search</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul id="navbar2">
+          <div class="nav">
+
+            <div class="box">
+              <div class="cart-count" style="background-color: aliceblue; color: #000;">0</div>
+              <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+            </div>
+      
+            <div class="cart">
+                  <div class="cart-title">Cart Items</div>
+                  <div class="cart-content"></div>
+              
+                  <div class="total">
+                      <div class="total-title">Total</div>
+                      <div class="total-price">Rs.0</div>
+                  </div>
+      
+                  <button class="btn-buy">Place Order</button>
+      
+                  <ion-icon name="close" id="cart-close"></ion-icon>
+            </div>
+          </div>
+          <li>
+            <button class="button" id="form-open">Login</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Welcome Page-->
+    <section id="welcome">
+      <h1>WELCOME TO  KitabSathi </h1>
+      <h2>You can <span class="auto-type"></span></h2>
+      <p><pre id="bio">KitabSathi is a platform for anyone to buy or sell used textbooks, novels and other books at
+pocket-friendly prices. Using the KitabSathi website,  we aim to make buying and selling 
+used books easy and accessible for everyone.</pre></p>
+      <button>Explore More</button>
+    </section>
+
+    <!--Services page-->
+    <section id="service" class="section-p1">
+      <div class="se-box">
+        <img src="img/service/Shipping.svg" alt="Free Shipping">
+        <h6>Free Shipping</h6>
+      </div>
+      <div class="se-box">
+        <img src="img/service/order.svg" alt="Online Order">
+        <h6>Online Order</h6>
+      </div>
+      <div class="se-box">
+        <img src="img/service/money.svg" alt="Save Money">
+        <h6>Save Money</h6>
+      </div>
+      <div class="se-box">
+        <img src="img/service/promotion.svg" alt="Promotion">
+        <h6>Promotion</h6>
+      </div>
+      <div class="se-box">
+        <img src="img/service/sale.svg" alt="Happy Sale">
+        <h6>Happy Sale</h6>
+      </div>
+      <div class="se-box">
+        <img src="img/service/24X7.svg" alt="24/7 Support">
+        <h6>24/7 Support</h6>
+      </div>
+    </section>
+  
+    <!--Feature Books-->
+    <section id="feature" class="section-p1">
+      <h2>Featured Books</h2>
+      <p>An epic quest. A forbidden love. The fate of worlds.</p>
+      
+      <div class="fea-book" > 
+
+        <div class="fea product">
+          <img class="food-img" src="img/Thriller Novels/1. Truly Devious by Maureen Johnson - ₹319.webp"  alt="" >
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">Truly Devious</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹319</h4>
+             <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/2. The Woman In The Window by A. J. Finn - ₹239.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">The Woman In The Window</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹219</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/3. A Murder On Malabar Hill by Sujata Massey - ₹300.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">True Devious</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹309</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/4. Pretty Girls by Karin Slaughter - ₹549.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">Truy Devious</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹312</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/5. The Silent Patient by Alex Michaelides - ₹315.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">Silent Patient</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹315</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/6. The Wife Between Us by Greer Hendricks & Sarah Pekkanen - ₹493.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">Wife Between Us</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹493</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/7. Genuine Fraud by E. Lockhart - ₹350.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">Genuine Fraud</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹350</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/8. Night Film by Marisha Pessl - ₹546.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">Night Film</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹546</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+      
+    </section>
+
+    <!--Offer-->
+    <section id="offer" class="section-m1">
+      <button class="normal">Explore More</button>
+    </section>    
+    
+    <!--New Arrival-->
+    <section id="feature" class="section-p1">
+      <h2>New Arrivals</h2>
+      <p>Embrace the unknown. Unleash your imagination. Explore a world anew.</p>
+      
+      <div class="fea-book" > 
+        <div class="fea product">
+          <img src="img/Thriller Novels/9. Big Little Lies by Liane Moriarty - ₹240.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">Big Little Lies</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹239</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/10. The Kind Worth Killing by Peter Swanson - ₹386.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">The Kind Worth Killing</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹385</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/11. The Woman In Cabin 10 by Ruth Ware - ₹499.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">The Woman In Cabin 10</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹499</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/12. Then She Was Gone by Lisa Jewell - ₹399.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">Then She Was Gone</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹299</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/13. You by Caroline Kepnes - ₹641.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">You</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹641</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/14. And Then There Were None by Agatha Christie - ₹190.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">And Then There Were None</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹190</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/15. Mr. Penumbra's 24-Hour Bookstore by Robin Sloan - ₹270.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">Mr. Penumbra's 24-Hour Bookstore</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹269</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+
+        <div class="fea product">
+          <img src="img/Thriller Novels/16. Final Girls by Riley Sager - ₹399.webp"  alt=""  class="food-img">
+          <div class="dec">
+            <span>Thriller</span>
+            <h5 class="food-title">Final Girls</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="food-price">₹409</h4>
+            <button class="add-cart"></button>
+          </div>
+        </div> 
+    </section>
+    
+    <!--Working-->
+    <section id="working" class="section-p1 working">
+      <h2>How KitabSathi Works?</h2>
+      <p>"Connecting Students, Empowering Education."</p>
+      <div class="how-it-works">
+        <div class="step">
+          <img src="img/workimg/1.jpg"  alt="Step">
+          <h3>Step 1: List Books</h3>
+          <p>Sign up and easily list your used books for sale on our platform. Provide details like title, author, condition, and price.</p>
+        </div>
+        <div class="step">
+          <img src="img/workimg/2.jpg" alt="Step">
+          <h3>Step 2: Discover</h3>
+          <p>Explore our extensive collection of second-hand books across various categories, from textbooks to novels, & find the ones you need.</p>
+        </div>
+        <div class="step">
+          <img src="img/workimg/3.jpg"  alt="Step">
+          <h3>Step 3: Connect</h3>
+          <p>You can connect with sellers directly through our platform, facilitating smooth communication and negotiation for book purchases.</p>
+        </div>
+        <div class="step">
+          <img src="img/workimg/4.jpg"  alt="Step">
+          <h3>Step 4: Buy/Sell</h3>
+          <p>Buy the books you want at affordable prices or sell your used books to other students, earning some extra cash while decluttering your shelves.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!--Testimonial-->
+<section class="testimonials section-p1">
+  <h1>Testimonials</h1>
+  <p>Connecting Book Lovers, Empowering Students: KitabSathi is the Ultimate Platform for Affordable Second-Hand Books!</p>
+  <div class="testimonials1">
+    <div class="testimonial-col">
+    <img src="img/Testimonial/1.jpg">
+    <div>
+      <p>"KitabSathi saved me a ton of money on textbooks! I found exactly what I needed at a fraction of the cost. Thank you for making education more affordable and accessible!"</p>
+      <h3>Elizabeth Olsen</h3>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star-half-o" aria-hidden="true"></i>
+    </div>
+  </div>
+ 
+  <div class="testimonial-col">
+    <img src="img/Testimonial/2.jpg">
+    <div>
+      <p>Selling my used books on KitabSathi was a breeze. I quickly connected with interested buyers & made some extra cash. It's a fantastic platform for students looking to declutter & earn!" </p>
+      <h3>Robert Downey Jr.</h3>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+  </div>
+</section>
+<hr>
+<!-- Footer -->
+<section class="footer section-p1">
+  <h4>About Us</h4>
+  <p>KitabSathi is a student-centric online platform revolutionizing the way second-hand books are bought and sold. <br>With affordable prices, easy connectivity, and a vibrant community, we make education accessible while promoting sustainability. <br>Join us to connect, save, and contribute to a world of affordable knowledge-sharing.</p>
+    <div class="icons">
+      <i class="fa-brands fa-square-facebook fa-xl"></i>
+        <i class="fa-brands fa-square-instagram fa-xl"></i>
+        <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+        <i class="fa-brands fa-linkedin fa-xl"></i>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 KitabSathi. All rights reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="footer-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<!--JAVASCRIPT-->
+    <script src="script.js"></script>
+<!--Scroll ANimation-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script src="https://kit.fontawesome.com/2fc56c5083.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+    
+  </script> 
+
+    <!--welcome Text Animation-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", { 
+        strings:["Buy Books", "Sell Books", "Borrow Books"],
+        typeSpeed:150,
+        backspeed:150,
+        loop: true,
+    });
+    </script>
+
+
+
+  </body>
+</html>
